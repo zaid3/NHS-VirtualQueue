@@ -1,0 +1,49 @@
+# Template: external PostgreSQL over TLS, approved IdP and trust gateway required.
+x-app: &app
+  build: ..
+  env_file: production.env
+  read_only: true
+  tmpfs: [/tmp]
+  cap_drop: [ALL]
+  security_opt: [no-new-privileges:true]
+  volumes: ["./certificates:/run/secrets:ro"]
+  networks: [application]
+services:
+  migrate:
+    <<: *app
+    command: [alembic, upgrade, head]
+    healthcheck:
+      disable: true
+    restart: "no"
+  api:
+    <<: *app
+    restart: unless-stopped
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+  worker:
+    <<: *app
+    command: [virtualqueue, worker]
+    healthcheck:
+      disable: true
+    restart: unless-stopped
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+  edge:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    ports: ["80:80", "443:443"]
+    environment:
+      PUBLIC_HOST: ${PUBLIC_HOST:?Set the approved public hostname}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    networks: [application]
+    depends_on: [api]
+volumes:
+  caddy-data:
+  caddy-config:
+networks:
+  application:

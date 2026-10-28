@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Clinically supervised waiting and hospital arrival coordination.">
+  <title>NHS VirtualQueue | Your care, clearly coordinated</title>
+  <link rel="icon" href="/static/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <div id="environment" class="environment" hidden></div>
+  <header class="header">
+    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">VQ</span><span>NHS VirtualQueue<small>Care, clearly coordinated</small></span></a>
+    <nav aria-label="Main navigation"><a href="/patient">Your visit</a><a href="/staff">Care team</a><button id="logout" class="quiet" hidden>Sign out</button></nav>
+  </header>
+  <main id="main" tabindex="-1"><p class="loading" role="status">Loading your care service…</p></main>
+  <div id="toast" role="status" class="toast" hidden></div>
+  <footer class="footer"><span>Independent project. Not an official NHS service.</span><span>Created and maintained by A Haque (zaid)</span><a href="https://www.nhs.uk/nhs-services/urgent-and-emergency-care-services/when-to-use-111/">NHS 111 guidance</a></footer>
+</body>
+</html>
