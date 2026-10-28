@@ -72,6 +72,7 @@ def main():
                 staff.get_by_role("button", name="Open local workspace").click()
                 staff.get_by_role("button", name="Alex Example", exact=False).click()
                 staff.get_by_label("Reason or action record").fill("Starting synthetic clinical assessment")
+                staff.get_by_label("Next action").select_option("start_assessment")
                 staff.get_by_role("button", name="Record action").click()
                 staff.get_by_label("Clinical record reference").fill("SYNTHETIC-BROWSER")
                 staff.get_by_label("Hospital arrival window").select_option(index=1)

@@ -4,7 +4,7 @@ Prepared 28 October 2026 for version 0.1.0. All records, external responses and 
 
 ## Local checks
 
-* The Python workflow/security/integration suite passed 74 tests on SQLite with 83% statement coverage before final packaging. Re-run `pytest --cov=virtualqueue --cov-report=term-missing --cov-fail-under=80` to validate a checkout.
+* The Python workflow/security/integration suite passed 74 tests on SQLite with 83.71% statement coverage. Re-run `pytest --cov=virtualqueue --cov-report=term-missing --cov-fail-under=80` to validate a checkout.
 * `ruff check .` passed.
 * Runtime dependency scan using `pip-audit -r requirements.lock` reported no known vulnerabilities on the scan date. This is not a penetration test or an assurance of no vulnerabilities.
 * Alembic migration `0001` was applied successfully. Test fixtures recreate the schema from this migration for each integration test.
@@ -16,9 +16,20 @@ Patient request and telephone verification; OTP expiry, replay, lockout and rate
 
 ## Separate environment checks
 
-The GitHub workflow includes SQLite, PostgreSQL 16, packaging/container build, dependency scan and a Chromium browser journey. Inspect the [Actions results](https://github.com/zaid3/NHS-VirtualQueue/actions) for the exact commit; configuration of a check is not a claim that it passed.
+[GitHub Actions run 40787878859](https://github.com/zaid3/NHS-VirtualQueue/actions/runs/40787878859) passed on commit `d8b662eeffab4a0a93481810db70833338aec3ae`:
 
-The local environment could not run PostgreSQL under a non-root account or launch Chromium because the necessary process/socket operations were denied. No local PostgreSQL or visual browser pass is claimed. The browser script is `scripts/browser_smoke.py`; it exercises patient intake, clinician assessment, booking confirmation, mobile overflow, worsening and offline fallback, and writes synthetic screenshots to `artifacts/`.
+| Check | Verified result |
+| --- | --- |
+| SQLite workflow/security tests | Passed |
+| PostgreSQL 16 workflow/security tests | 74 passed |
+| Chromium patient and clinician journey | Passed; no page errors |
+| Responsive mobile layout and offline fallback | Passed in the browser journey |
+| Python lint, dependency scan and wheel packaging | Passed |
+| Docker image build | Passed |
+
+The four browser screenshots were downloaded and the desktop homepage, staff dashboard and mobile patient screen were visually reviewed. The synthetic UI remains clearly labelled as unconnected to NHS services. See [Actions](https://github.com/zaid3/NHS-VirtualQueue/actions) for subsequent commit results; evidence for one commit does not automatically apply to every future revision.
+
+The local environment could not run PostgreSQL under a non-root account or launch Chromium because the necessary process/socket operations were denied. Those checks were instead completed successfully on GitHub runners; no local PostgreSQL or browser execution pass is claimed. The browser script is `scripts/browser_smoke.py`; it exercises patient intake, clinician assessment, booking confirmation, mobile overflow, worsening and offline fallback, and writes synthetic screenshots to `artifacts/`.
 
 On a machine with permitted browser process support:
 
