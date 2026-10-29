@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "nhs-virtualqueue"
-version = "0.1.0.post1"
+version = "0.1.0.post2"
 description = "Independent clinical waiting and hospital arrival coordination service"
 readme = "README.md"
 requires-python = ">=3.12"
-license = "LicenseRef-NHS-VirtualQueue-Commercial AND Apache-2.0"
+license = "Apache-2.0"
 license-files = ["LICENSE", "NOTICE", "LICENSES/*.txt"]
 authors = [{name = "A Haque (zaid)"}]
 dependencies = [

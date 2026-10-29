@@ -1,36 +1,33 @@
-# Commercial licensing and services
+# Open source software and paid services
 
 Created and maintained by **A Haque (zaid)**.
 
-The source is publicly viewable. For **new proprietary material** covered by the [commercial licence notice](LICENSE), running, testing, deploying, modifying, distributing or offering a service requires a paid written agreement, unless an existing licence, platform right or statutory permission applies. This is a source-available commercial model, not an open source licence for that new material.
+NHS VirtualQueue is open source under [Apache License 2.0](LICENSE). NHS organisations and other users may use, modify and redistribute this release, including commercially, under that licence without paying a software licence fee. The licence's notice and other conditions still apply.
 
-## What remains available under Apache 2.0
+The proposed business model earns revenue from agreed implementation work and ongoing services. A customer can choose to pay for the maintainer's work, or self-host and use another provider. There is no requirement to purchase services to exercise the Apache 2.0 rights.
 
-The application was already published under Apache 2.0. [Snapshot 081c579](https://github.com/zaid3/NHS-VirtualQueue/tree/081c57949bacf017b5aebf57fa0a34b493a1ec31) and material previously released under that licence remain available for use, modification and redistribution, including commercial use, under those terms. That remains true when earlier material is included in a later release. There is no retrospective licence fee for those rights.
+## Proposed paid services
 
-The existing application can therefore still be used under Apache 2.0. New paid licensing can cover additional original work for which the rights holder has the necessary rights; it cannot remove the public's existing permissions. The [Apache text](LICENSES/Apache-2.0.txt) and [provenance notice](NOTICE) are retained.
+| Service | Proposed charging approach |
+| --- | --- |
+| Installation and implementation | A fee for an agreed project scope |
+| Integration with existing identity, messaging, booking and patient record systems | A project fee based on the required interfaces and onboarding work |
+| Managed hosting and operations | An optional recurring subscription for an agreed service |
+| Maintenance, upgrades and support | An optional recurring contract with defined coverage |
+| Staff training and custom development | An agreed project or session fee |
 
-## Paid offerings
+Prices, service availability, support hours, response times and contract duration have not been set. No hosted service, customer contract, NHS purchase or revenue is claimed. Services are subject to an agreed scope, capacity and the necessary deployment approvals. The open source licence does not provide free implementation, hosting or support.
 
-Commercial arrangements may cover:
+Any service agreement should identify the legal parties, deliverables, fees, responsibilities, support coverage, data handling, exit arrangements and any service levels. A service agreement must not remove the customer's existing Apache 2.0 rights. Customer-specific work should have its ownership and licensing agreed explicitly before it starts. Contracts need appropriate legal and procurement review before signature.
 
-- A licence for specified new proprietary material, versions and deployments.
-- Integration with an organisation's identity, messaging, booking and patient record systems.
-- Hosting and operational management with an agreed scope.
-- Installation, training, maintenance, upgrades and support.
+## Request a quote
 
-These are the proposed commercial services. Availability, fees, support hours, response times, deployment responsibilities and contract duration must be agreed in writing. No published price, automatic entitlement, support guarantee or NHS procurement commitment is implied. Payment alone does not establish a licence without an accepted agreement.
+Open a [paid services enquiry](https://github.com/zaid3/NHS-VirtualQueue/issues/new?template=commercial-licensing.md). Describe the proposed use at a high level and request a private contact route. The issue is public: do not include patient data, credentials, payment details, personal contact information or confidential procurement material.
 
-There is no automatic free-use exemption for NHS bodies, public-sector organisations, charities or educational institutions for new proprietary material. Existing Apache and third-party rights continue to apply to the material they cover.
-
-## Request a licence or service quote
-
-Open a [commercial licensing enquiry](https://github.com/zaid3/NHS-VirtualQueue/issues/new?template=commercial-licensing.md). Explain the intended use at a high level and request a private contact route. The issue is public: do not include patient data, credentials, payment details, personal contact information or confidential procurement material.
-
-The written agreement should identify the legal parties, covered versions and material, authorised use, organisation and deployment scope, term, fees, maintenance responsibilities and any service levels. Customer contracts need an appropriate legal and procurement review before signature.
+An enquiry is not an order. No payment is collected by this repository, and no automatic subscription or support entitlement is created.
 
 ## Clinical and technical readiness
 
-A licence is not clinical approval. The application has synthetic technical validation but is not connected to live NHS services or authorised for patient use. Live integration, clinical evaluation, clinical safety and deployment assurance remain outstanding. See [validation](docs/validation.md) and [clinical safety](docs/clinical-safety.md).
+The application has synthetic technical validation but is not connected to live NHS services or authorised for patient use. Live integration, clinical evaluation, clinical safety and deployment assurance remain outstanding. Neither an open source licence nor a service payment establishes clinical approval. See [validation](docs/validation.md) and [clinical safety](docs/clinical-safety.md).
 
-The repository does not collect payments, issue licence keys or establish a hosted service. The licensing policy defines permission and the route to a paid agreement. It does not add an automatic shutdown or change any patient workflow.
+Third-party software retains its own licences. Attribution and applicable notices must be preserved; see [NOTICE](NOTICE). The project is independent and does not grant rights in NHS branding or imply NHS endorsement.

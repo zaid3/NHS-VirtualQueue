@@ -1,7 +1,7 @@
 ---
-name: Commercial licensing enquiry
-about: Request a private discussion about a software licence or paid services
-title: Commercial licensing enquiry
+name: Paid services enquiry
+about: Request a private discussion about implementation, hosting or support
+title: Paid services enquiry
 ---
 
 This issue is public. Do not include patient data, credentials, payment details,
@@ -14,12 +14,13 @@ and the proposed use. Do not include clinical records or deployment secrets.
 
 ## What you would like to discuss
 
-For example: a licence for new proprietary material, evaluation permission,
-integration, hosting, training, maintenance or support.
+For example: implementation, integration, hosting, training, maintenance,
+custom development or support.
 
 ## Private contact request
 
 Please provide a private contact route for discussing commercial terms.
 
-An enquiry is not an order and does not grant a licence or clinical approval.
-Existing rights in the earlier Apache 2.0 release are unaffected.
+The software is available under Apache 2.0 without a licence fee. Paid services
+require a separate written agreement. An enquiry is not an order or clinical
+approval and does not limit your open source rights.
