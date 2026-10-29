@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "NHS VirtualQueue",
-    "version": "0.1.0"
+    "version": "0.1.0.post1"
   },
   "paths": {
     "/health/live": {

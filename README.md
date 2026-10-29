@@ -2,7 +2,7 @@
 
 **Clinically supervised remote waiting and hospital arrival coordination.**
 
-Created and maintained by **A Haque (zaid)**. Independent software project, licensed under Apache 2.0. This is not an official NHS service and is not connected to live NHS systems.
+Created and maintained by **A Haque (zaid)**. Independent software project with publicly viewable source. New proprietary material is subject to [paid commercial terms](LICENSE); earlier Apache 2.0 permissions are preserved. This is not an official NHS service and is not connected to live NHS systems.
 
 NHS VirtualQueue brings callback requests, clinician assessment, receiving-service booking confirmation, travel planning and patient follow-up into one application. It is designed to work alongside a hospital's existing electronic patient record (EPR), patient administration system (PAS) and booking arrangements.
 
@@ -26,6 +26,8 @@ The purpose is to help suitable patients spend less of their wait in a hospital 
 This is runnable application code with automated tests. **It is not authorised for clinical deployment.** Live onboarding, an approved trust gateway, receiving-system mapping, clinical safety work and deployment assurance remain outstanding. See [release evidence](docs/validation.md) for exactly what has been tested.
 
 ## Run locally
+
+For material covered by the commercial terms, obtain a written licence before running it, including for evaluation. Existing rights in the earlier Apache release and third-party components remain available. See [licensing and services](COMMERCIAL.md) for the scope and enquiry route.
 
 Requires Python 3.12 or later. Run from a checkout:
 
@@ -99,8 +101,13 @@ The [deployment template](deploy/compose.yaml) separates API, worker and migrati
 * [NHS Innovation Service brief](docs/innovation-submission.md)
 * [Validation evidence](docs/validation.md) and [API specification](docs/openapi.json)
 * [Contributing](CONTRIBUTING.md) and [security reporting](SECURITY.md)
+* [Commercial licensing and services](COMMERCIAL.md) and [licensing provenance](NOTICE)
 
 ## Licence
 
-Copyright 2026 A Haque (zaid). [Apache License 2.0](LICENSE) permits use, modification and distribution subject to its terms. Attribution does not imply NHS endorsement or permission to use NHS branding.
+Copyright 2026 A Haque (zaid). New proprietary material is provided under the [NHS VirtualQueue Commercial Licence Notice](LICENSE). Its use requires a paid written agreement unless another existing permission applies. Hosting, integration, maintenance and support supplied by the maintainer are separately priced services, subject to agreement.
+
+This is a source-available commercial model for new development. It is not an open source licence for that new material. The code already published in [the earlier Apache snapshot](https://github.com/zaid3/NHS-VirtualQueue/tree/081c57949bacf017b5aebf57fa0a34b493a1ec31) keeps its Apache 2.0 permissions, including free commercial use and redistribution. Those permissions also remain for earlier material included in later versions. Changing this notice does not make the previously released application payable.
+
+The [original Apache text](LICENSES/Apache-2.0.txt) and [provenance notice](NOTICE) are retained. Third-party libraries keep their own licences. Attribution does not imply NHS endorsement or permission to use NHS branding. [Request commercial terms](https://github.com/zaid3/NHS-VirtualQueue/issues/new?template=commercial-licensing.md).
 

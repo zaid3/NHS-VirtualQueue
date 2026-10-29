@@ -1,7 +1,8 @@
 FROM python:3.12-slim
 ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 PIP_NO_CACHE_DIR=1
 WORKDIR /app
-COPY requirements.lock pyproject.toml README.md LICENSE ./
+COPY requirements.lock pyproject.toml README.md LICENSE NOTICE COMMERCIAL.md MANIFEST.in ./
+COPY LICENSES ./LICENSES
 RUN pip install --no-cache-dir -r requirements.lock
 COPY src ./src
 RUN pip install --no-deps . && useradd --uid 10001 --create-home vq

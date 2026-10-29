@@ -1,0 +1,48 @@
+NHS VirtualQueue
+Copyright 2026 A Haque (zaid).
+
+Licensing transition: 29 October 2026
+
+Last snapshot preceding the commercial licensing policy:
+081c57949bacf017b5aebf57fa0a34b493a1ec31
+https://github.com/zaid3/NHS-VirtualQueue/tree/081c57949bacf017b5aebf57fa0a34b493a1ec31
+
+That snapshot and material previously released under Apache License 2.0 retain
+their Apache 2.0 permissions. The full original text is in LICENSES/Apache-2.0.txt.
+Inclusion in a newer distribution does not remove those permissions. They also
+allow recipients to obtain and redistribute the earlier material to new users.
+
+The root LICENSE describes the commercial terms for new proprietary material.
+It does not retrospectively relicense the earlier application, require fees for
+rights already granted, or supersede third-party licences. New original material
+must be distinguished through the version history and any file-specific notices.
+In a modified legacy file, the original portion retains its earlier licence;
+only new material for which the rights holder controls the rights is within the
+commercial notice's scope. The version change itself creates no new exclusivity
+over existing application functionality.
+
+Third-party dependencies are not relicensed by this project. Their copyright,
+licence texts and other required notices remain with their installed packages
+and distributions. The Docker image also contains separately licensed operating
+system and runtime components. Retain their notices and comply with their terms.
+
+Direct runtime dependency licence metadata reviewed on 29 October 2026:
+- FastAPI: MIT
+- Uvicorn: BSD-3-Clause
+- SQLAlchemy: MIT
+- Alembic: MIT
+- Psycopg and psycopg-binary: LGPL-3.0-only
+- HTTPX: BSD-3-Clause
+- PyJWT: MIT
+- cryptography: Apache-2.0 OR BSD-3-Clause
+- Pydantic: MIT
+
+This list identifies direct dependencies; it is not a complete licence audit
+of transitive packages, bundled native libraries, base images or a future
+customer distribution. Inspect the actual distribution before supplying it.
+In particular, the commercial terms do not restrict any replacement, relinking,
+source-access or other rights required by an applicable dependency licence.
+
+No permission to use the NHS identity or other third-party branding is granted.
+This is an independent project and has not been endorsed or clinically approved
+by the NHS.

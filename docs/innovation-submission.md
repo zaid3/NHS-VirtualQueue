@@ -3,7 +3,8 @@
 **Innovation:** NHS VirtualQueue  
 **Creator and maintainer:** A Haque (zaid)  
 **Repository:** https://github.com/zaid3/NHS-VirtualQueue  
-**Prepared:** 28 October 2026  
+**Prepared:** 28 October 2026; licensing model updated 29 October 2026
+
 **Status:** Functional software with synthetic technical validation; not connected to live NHS services and not clinically approved.
 
 ## Short description
@@ -49,6 +50,8 @@ Agree baseline, inclusion/exclusion criteria, sample size, monitoring, escalatio
 Help identifying an appropriate NHS clinical and operational partner; assessing pathway fit against existing services; designing a safe integration and supervised evaluation; developing clinical safety and DTAC evidence; determining relevant regulatory requirements; and planning procurement and adoption if evidence supports them.
 
 ## Submission preparation
+
+The proposed revenue model is paid licences for new proprietary material and separately agreed hosting, integration, implementation, maintenance and support. Prices, service commitments and adoption costs have not been set. Material already released under Apache 2.0 retains its existing rights; a licensing change cannot require payment for that earlier application. See [commercial licensing](../COMMERCIAL.md). The new material should be described as source-available, with no claim that it has an open source licence.
 
 Use the account's correct organisation, contact and business details when completing the Innovation Service record. Do not put private account information in this public repository. Attach technical evidence without patient data and state its development stage accurately. Submission is for needs assessment and referral to support organisations; it is not NHS endorsement or permission to treat patients.
 
