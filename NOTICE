@@ -1,12 +1,26 @@
 NHS VirtualQueue
 Copyright 2026 A Haque (zaid).
 
-This release is offered under Apache License 2.0. The full licence is in LICENSE
-and LICENSES/Apache-2.0.txt. This grant also covers the maintainer's original
-material included in this release that was previously published with the
-commercial licence notice. Earlier Apache 2.0 permissions remain in effect.
-Paid implementation, hosting and support are optional, separately agreed
-services. This notice does not add conditions to the Apache licence.
+Licensing transition: 29 October 2026
+
+Last snapshot preceding the commercial licensing policy:
+47ba85fb5a9f26d8d1026f47deb564daab8c7fec
+https://github.com/zaid3/NHS-VirtualQueue/tree/47ba85fb5a9f26d8d1026f47deb564daab8c7fec
+
+That snapshot and material previously released under Apache License 2.0 retain
+their Apache 2.0 permissions. The full original text is in LICENSES/Apache-2.0.txt.
+Inclusion in a newer distribution does not remove those permissions. They also
+allow recipients to obtain and redistribute the earlier material to new users.
+
+The root LICENSE describes the commercial terms for new proprietary material.
+It does not retrospectively relicense the earlier application, require fees for
+rights already granted, or supersede third-party licences. New original material
+must be distinguished through the version history and any file-specific notices.
+In a modified legacy file, the original portion retains its earlier licence;
+only new material for which the rights holder controls the rights is within the
+commercial notice's scope. The version change itself creates no new exclusivity
+over existing application functionality. This licensing update introduces no new
+paid-only application feature.
 
 Third-party dependencies are not relicensed by this project. Their copyright,
 licence texts and other required notices remain with their installed packages
@@ -27,8 +41,8 @@ Direct runtime dependency licence metadata reviewed on 29 October 2026:
 This list identifies direct dependencies; it is not a complete licence audit
 of transitive packages, bundled native libraries, base images or a future
 customer distribution. Inspect the actual distribution before supplying it.
-Preserve any replacement, relinking, source-access or other rights required
-by an applicable dependency licence.
+In particular, the commercial terms do not restrict any replacement, relinking,
+source-access or other rights required by an applicable dependency licence.
 
 No permission to use the NHS identity or other third-party branding is granted.
 This is an independent project and has not been endorsed or clinically approved

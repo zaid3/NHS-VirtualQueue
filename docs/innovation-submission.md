@@ -51,7 +51,7 @@ Help identifying an appropriate NHS clinical and operational partner; assessing 
 
 ## Submission preparation
 
-The project is open source under Apache License 2.0. The proposed revenue model is an implementation and integration fee, with optional recurring hosting, maintenance and support contracts for NHS organisations and other care providers. Training and agreed development work may also be charged separately. Customers can use the code without paying a software licence fee and are free to self-host or choose another provider. Prices, service availability, commitments and total adoption costs have not been set. No NHS contract, income or procurement commitment is claimed. See [paid services and revenue model](../COMMERCIAL.md).
+The proposed revenue model is paid licences for new proprietary material and separately agreed hosting, integration, implementation, maintenance and support. Prices, service commitments and adoption costs have not been set. Material already released under Apache 2.0 retains its existing rights; a licensing change cannot require payment for that earlier application. See [commercial licensing](../COMMERCIAL.md). The new material should be described as source-available, with no claim that it has an open source licence.
 
 Use the account's correct organisation, contact and business details when completing the Innovation Service record. Do not put private account information in this public repository. Attach technical evidence without patient data and state its development stage accurately. Submission is for needs assessment and referral to support organisations; it is not NHS endorsement or permission to treat patients.
 
